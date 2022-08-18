@@ -14,17 +14,17 @@ class JollyBanker {
     ~JollyBanker();
 
     //reads in file of transactions that is given
-    void readTransactions(const string& fileName);
+    void readTransactions(const string &fileName);
    
     //will display all of the accounts and balances
     void displayAllBankBalances();
     
     //Transactions that are avaliable to perform
-    bool openAccount();
-    bool withdrawFunds();
-    bool depositeFunds();
-    bool transferFunds();
-    bool printHistory();
+    bool openAccount(const string &transaction);
+    bool withdrawFunds(const string &transaction);
+    bool depositFunds(const string &transaction);
+    bool transferFunds(const string &transaction);
+    bool printHistory(const string &transaction);
 
 
 
