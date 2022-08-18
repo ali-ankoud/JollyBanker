@@ -20,6 +20,10 @@ class BSTree
 
         void Empty();
         bool isEmpty() const;
+
+        void recursivePrint(Node* current) const;
+        bool RecursiveInsert(Node* current, Account* insert);
+        
     private:
         struct Node
         {
