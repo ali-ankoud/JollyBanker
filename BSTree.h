@@ -3,6 +3,7 @@
 // BSTree.h
 
 #pragma once
+#include <iostream>
 #include "Account.h"
 
 class BSTree
@@ -11,7 +12,7 @@ class BSTree
         BSTree();
         ~BSTree();
 
-        bool Insert(Account *);
+        bool Insert(Account *newAccount);
         // retrieve object, first parameter is the ID of the account
         // second parameter holds pointer to found object, NULL if not found
         bool Retrieve(const int &, Account * &) const;
